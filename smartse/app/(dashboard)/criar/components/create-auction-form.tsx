@@ -76,7 +76,7 @@ export default function CreateAuctionForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       console.log(values);
-      const res = await fetch("http://localhost:3005/auction", {
+      const res = await fetch("https://api.smartse.tucano.app/auction", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

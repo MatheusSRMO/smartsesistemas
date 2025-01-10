@@ -7,7 +7,7 @@ import { Auction } from '@/lib/types'
 
 
 export default async function DashboardPage() {
-  const auctions = await fetch("http://localhost:3005/").then((res) => res.json())
+  const auctions = await fetch(process.env.API_URL!).then((res) => res.json())
   return (
     <>
       {/* Banner principal */}

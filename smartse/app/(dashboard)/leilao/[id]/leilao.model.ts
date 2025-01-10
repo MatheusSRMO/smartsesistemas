@@ -2,10 +2,7 @@ import { Bid } from "@/lib/types";
 import { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 
-const URL = "http://localhost:3005";
-
-
-const socket = io(URL, {
+const socket = io(process.env.API_URL!, {
   autoConnect: true,
 });
 
