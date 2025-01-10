@@ -83,5 +83,3 @@ cd smartsesistemas
    ```
 
 5. Acesse o frontend em [http://localhost:3000](http://localhost:3000).
-
----
