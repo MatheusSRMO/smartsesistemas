@@ -2,7 +2,7 @@ import { Bid } from "@/lib/types";
 import { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io(process.env.API_URL!, {
+const socket = io('https://api.smartse.tucano.app', {
   autoConnect: true,
 });
 

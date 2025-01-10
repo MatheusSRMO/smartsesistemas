@@ -15,7 +15,7 @@ export default function AuctionInformation({ auctionTime, title, initialBid, det
       <img
         src={image}
         alt="Leilão"
-        className="w-full h-64 object-cover"
+        className="w-full h-64 object-scale-down"
       />
       <div className="p-6">
         <h1 className="text-2xl font-bold text-gray-800">

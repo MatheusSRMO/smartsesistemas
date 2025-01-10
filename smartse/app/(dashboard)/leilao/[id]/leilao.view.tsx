@@ -26,7 +26,7 @@ export default function LeilaoView({ id, auction }: LeilaoViewProps) {
   });
 
   if(auctionTime < 0) {
-    return <div className='container flex justify-center items-center h-screen'>
+    return <div className='container flex justify-center items-center h-[85vh]'>
       <Loader />
     </div>
   }
