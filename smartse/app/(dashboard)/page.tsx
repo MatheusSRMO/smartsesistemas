@@ -6,6 +6,9 @@ import Image from 'next/image'
 import { Auction } from '@/lib/types'
 
 
+export const fetchCache = 'force-no-store';
+
+
 export default async function DashboardPage() {
   const auctions = await fetch(process.env.API_URL!).then((res) => res.json())
   return (
