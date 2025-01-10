@@ -6,7 +6,7 @@ import ClosedAuction from "./components/closed-auction";
 export default async function AuctionPage({ params }: { params: Promise<{ id: string }> }) {
 
   const id = (await params).id;
-  const url = process.env.API_URL  + id;
+  const url = process.env.API_URL + "auction/" + id;
 
   console.log(url)
 
